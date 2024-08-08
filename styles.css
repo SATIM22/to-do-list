@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.component {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #efefef;
+}
+
+.component .sidebar h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+#button-new-categorie {
+    background-color: #87bffe;
+    border-radius: 5px;
+    padding: 8px 30px;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#categorie-lists {
+    margin-top: 10px;
+}
+
+#categorie-lists {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 550px;
+    overflow-x: auto;
+}
+
+#categorie-lists li {
+    cursor: pointer;
+    background-color: #d3d5d7;
+    border-radius: 4px;
+}
+
+#categorie-lists li:hover {
+    background-color: #efefef;
+}
+
+#button-new-task {
+    background-color: #f4d874;
+    border-radius: 5px;
+    padding: 9px 30px;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 19px;
+    width: 300px;
+}
+
+.main-daterow {
+    display: flex;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.top-main {
+    padding: 10px 19px;
+    margin: 19px 10px;
+    background-color: #dde2e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex: 1 1 700px
+    }
+    .sidebar {
+        flex: 1 1 700px;
+        /* Flex-grow, flex-shrink, and flex-basis */
+    }
+}
